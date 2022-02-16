@@ -11,6 +11,7 @@
 		401D4A583DB03AC63DBF1C96 /* Pods_photoEditorChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615255D454CD98011FC3DE8 /* Pods_photoEditorChallenge.framework */; };
 		6744AA8B0BC52477713464AE /* Pods_photoEditorChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1921E65EFDF55A7F4D1B9025 /* Pods_photoEditorChallengeTests.framework */; };
 		94FBA83E27BD68F800A0DBDD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 94FBA83D27BD68F800A0DBDD /* Alamofire */; };
+		94FBA84027BDB3A600A0DBDD /* UploadUrlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FBA83F27BDB3A600A0DBDD /* UploadUrlModel.swift */; };
 		94FE531127BCAE2500EA743E /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FE531027BCAE2500EA743E /* PhotoCollectionViewController.swift */; };
 		94FE531427BCAE6A00EA743E /* PhotoArrayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FE531227BCAE6A00EA743E /* PhotoArrayCollectionViewCell.swift */; };
 		94FE531527BCAE6A00EA743E /* PhotoArrayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FE531327BCAE6A00EA743E /* PhotoArrayCollectionViewCell.xib */; };
@@ -53,6 +54,7 @@
 		5FD9D7440BD0AA6AEF1C3302 /* Pods-photoEditorChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-photoEditorChallengeTests/Pods-photoEditorChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		780B53464AFB268643BCD448 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photoEditorChallenge_photoEditorChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C91E917BBEDECDCD718C0C /* Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-photoEditorChallenge-photoEditorChallengeUITests/Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		94FBA83F27BDB3A600A0DBDD /* UploadUrlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadUrlModel.swift; sourceTree = "<group>"; };
 		94FE531027BCAE2500EA743E /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		94FE531227BCAE6A00EA743E /* PhotoArrayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoArrayCollectionViewCell.swift; sourceTree = "<group>"; };
 		94FE531327BCAE6A00EA743E /* PhotoArrayCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoArrayCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				94FE531227BCAE6A00EA743E /* PhotoArrayCollectionViewCell.swift */,
 				94FE531327BCAE6A00EA743E /* PhotoArrayCollectionViewCell.xib */,
 				94FE535627BCC56800EA743E /* SelectedPhotoViewController.swift */,
+				94FBA83F27BDB3A600A0DBDD /* UploadUrlModel.swift */,
 			);
 			path = photoEditorChallenge;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				94FF5A9B27BC1E4400FEB338 /* PhotoAppModel.swift in Sources */,
 				94FF5A6927BC097C00FEB338 /* SceneDelegate.swift in Sources */,
 				94FE535527BCC4D800EA743E /* PhotoWebData.swift in Sources */,
+				94FBA84027BDB3A600A0DBDD /* UploadUrlModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
