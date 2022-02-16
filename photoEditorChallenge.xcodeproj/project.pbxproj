@@ -10,6 +10,7 @@
 		06725C39FD9BAC91123C12B6 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 780B53464AFB268643BCD448 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework */; };
 		401D4A583DB03AC63DBF1C96 /* Pods_photoEditorChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615255D454CD98011FC3DE8 /* Pods_photoEditorChallenge.framework */; };
 		6744AA8B0BC52477713464AE /* Pods_photoEditorChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1921E65EFDF55A7F4D1B9025 /* Pods_photoEditorChallengeTests.framework */; };
+		94FBA83E27BD68F800A0DBDD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 94FBA83D27BD68F800A0DBDD /* Alamofire */; };
 		94FE531127BCAE2500EA743E /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FE531027BCAE2500EA743E /* PhotoCollectionViewController.swift */; };
 		94FE531427BCAE6A00EA743E /* PhotoArrayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FE531227BCAE6A00EA743E /* PhotoArrayCollectionViewCell.swift */; };
 		94FE531527BCAE6A00EA743E /* PhotoArrayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FE531327BCAE6A00EA743E /* PhotoArrayCollectionViewCell.xib */; };
@@ -81,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				401D4A583DB03AC63DBF1C96 /* Pods_photoEditorChallenge.framework in Frameworks */,
+				94FBA83E27BD68F800A0DBDD /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +184,6 @@
 				5FD9D7440BD0AA6AEF1C3302 /* Pods-photoEditorChallengeTests.debug.xcconfig */,
 				BC6B5AAE48DE6E75B36283A3 /* Pods-photoEditorChallengeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -204,6 +205,9 @@
 			dependencies = (
 			);
 			name = photoEditorChallenge;
+			packageProductDependencies = (
+				94FBA83D27BD68F800A0DBDD /* Alamofire */,
+			);
 			productName = photoEditorChallenge;
 			productReference = 94FF5A6327BC097C00FEB338 /* photoEditorChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -279,6 +283,9 @@
 				Base,
 			);
 			mainGroup = 94FF5A5A27BC097C00FEB338;
+			packageReferences = (
+				94FBA83C27BD68F800A0DBDD /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 94FF5A6427BC097C00FEB338 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -803,6 +810,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		94FBA83C27BD68F800A0DBDD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		94FBA83D27BD68F800A0DBDD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 94FBA83C27BD68F800A0DBDD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 94FF5A5B27BC097C00FEB338 /* Project object */;
 }

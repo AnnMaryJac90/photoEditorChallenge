@@ -25,6 +25,7 @@ class PhotoCollectionViewController: UICollectionViewController {
     var reciever = PhotoRecieverFromWeb()
     var imagesArray : [Data] = []
     var imageSelected : UIImage?
+    var imageFile : Data?
     
     var array : [PhotoAppModel]?
     var imageToDisplay : UIImage? = UIImage(named: "austin-smart-70350")
@@ -72,6 +73,7 @@ class PhotoCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PhotoArrayCollectionViewCell
         //cell.backgroundColor = .blue
         let image = UIImage(data: imagesArray[indexPath.row])
+        imageFile = imagesArray[indexPath.row]
         cell.photoView.image = image
         // Configure the cell
     
@@ -82,7 +84,7 @@ class PhotoCollectionViewController: UICollectionViewController {
         let cell = collectionView.cellForItem(at: indexPath)
         
        imageSelected = UIImage(data: imagesArray[indexPath.row])
-        cell?.backgroundColor = .blue
+       
         
         
         self.performSegue(withIdentifier: "toSelectedPhotoView", sender: self)
@@ -95,7 +97,7 @@ class PhotoCollectionViewController: UICollectionViewController {
         if segue.identifier == "toSelectedPhotoView" {
             var selectedPhotoObj = segue.destination as! SelectedPhotoViewController
             selectedPhotoObj.imageToDisplay = imageSelected
-        
+            selectedPhotoObj.imageFile = imageFile
         }
     }
 

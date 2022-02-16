@@ -7,10 +7,18 @@
 
 import UIKit
 import CoreImage
+import JLStickerTextView
+import TextDrawer
+
 
 class SelectedPhotoViewController: UIViewController {
+   
+   // @IBOutlet var stickerView: JLStickerImageView!
+   // stickerView.addLabel()
+    
      var imageToDisplay : UIImage?
-    @IBOutlet weak var selectedPhotoView: UIImageView!
+    var imageFile : Data?
+    @IBOutlet weak var selectedPhotoView: JLStickerImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         selectedPhotoView.image = imageToDisplay
@@ -40,11 +48,23 @@ class SelectedPhotoViewController: UIViewController {
     
 
     @IBAction func resetButtonTapped(_ sender: UIButton) {
-        selectedPhotoView.image = imageToDisplay
+      selectedPhotoView.image = imageToDisplay
+      //  stickerView.addLabel()
     }
     
 
-   
+    
+    @IBAction func saveButonTapped(_ sender: UIButton) {
+        print("Will save the photo soon")
+      
+        
+    }
+    
+    @IBAction func addTextButtonTapped(_ sender: UIButton) {
+        selectedPhotoView.addLabel()
+        
+    }
+    
 
 }
 
