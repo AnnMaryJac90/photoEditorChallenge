@@ -12,14 +12,14 @@ class PhotoRecieverFromWeb {
    let urlString = "https://eulerity-hackathon.appspot.com/image"
     
     var photoArrayFinal : [PhotoAppModel]?
-    var photoArrayObj : PhotoWebData?
+  //  var photoArrayObj : PhotoWebData?
     var photoList: [Data] = []
     var delegate : PhotoArrayUpdateDelegate?
   
 
     func getUrlData()  {
         
-        //Create a URL
+          //Create a URL
         
         if let url = URL(string: urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!){
             
@@ -66,7 +66,7 @@ class PhotoRecieverFromWeb {
                 
                 if let photo = element["url"]{
                     let photoObj = PhotoAppModel(photoUrl: photo)
-                    print("Photo object is \(photoObj)")
+                    
                     photoArray.append(photoObj)
                     
                     
@@ -103,26 +103,20 @@ class PhotoRecieverFromWeb {
             if error != nil {
                 print("Error downloading picture: \(error)")
             } else {
-                // No errors found.
-               
-           
-                print("*********")
+                
                     if let imageData = data {
-                        //
-                        let photoListObj = PhotoWebData(webImage: imageData)
-                        print("&&&&&&&&")
-                        print(photoListObj)
+                       
+                      //Appending the photo fetched from web to an array
+                       
                         photoList.append(imageData)
-                        print(photoList)
+                        
                         delegate?.updatePhotoArray(with: photoList)
                         
                         }
-                        
                      
-                        //
                 }
            
-               // print("**********************")
+             
                
             }
 
@@ -137,7 +131,7 @@ class PhotoRecieverFromWeb {
 }
 
 protocol PhotoArrayUpdateDelegate{
-    func updateUrlArray(_ urlArrayStorage: [PhotoWebData])
+  
     func updatePhotoArray(with photoArray : [Data])
     func didErrorOccur(error : Error)
 }

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import UIKit
-struct PhotoWebData: Codable{
-    var webImage : Data
+
+struct PhotoWebData: Codable {
+    var weIage : Data
 }

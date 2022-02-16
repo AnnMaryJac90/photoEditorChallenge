@@ -24,6 +24,7 @@ class PhotoCollectionViewController: UICollectionViewController {
     
     var reciever = PhotoRecieverFromWeb()
     var imagesArray : [Data] = []
+    var imageSelected : UIImage?
     
     var array : [PhotoAppModel]?
     var imageToDisplay : UIImage? = UIImage(named: "austin-smart-70350")
@@ -34,12 +35,14 @@ class PhotoCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         self.reciever.getUrlData()
         
+        // Setting the delegate for protocol defined within photoRecieverFromWeb
+        
         reciever.delegate = self
         
-      //  print("*********^^^^^^^^^^^^^***************")
+    //Registering the nib to PhotoCell
      self.collectionView.register(PhotoArrayCollectionViewCell.nib(), forCellWithReuseIdentifier: "PhotoArrayCollectionViewCell")
         
-      //  self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+      
         
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: imageWidth, height: imageWidth)
@@ -62,20 +65,39 @@ class PhotoCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return imagesArray.count ?? 3
+        return imagesArray.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PhotoArrayCollectionViewCell
         //cell.backgroundColor = .blue
-        var image = UIImage(data: imagesArray[indexPath.row])
+        let image = UIImage(data: imagesArray[indexPath.row])
         cell.photoView.image = image
         // Configure the cell
     
         return cell
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        
+       imageSelected = UIImage(data: imagesArray[indexPath.row])
+        cell?.backgroundColor = .blue
+        
+        
+        self.performSegue(withIdentifier: "toSelectedPhotoView", sender: self)
+        
+    }
 
 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSelectedPhotoView" {
+            var selectedPhotoObj = segue.destination as! SelectedPhotoViewController
+            selectedPhotoObj.imageToDisplay = imageSelected
+        
+        }
+    }
 
 }
 
@@ -120,94 +142,23 @@ extension PhotoCollectionViewController: UICollectionViewDelegateFlowLayout {
 }
 
 
+//MARK : -   Delegate Protocol definition
+
 extension PhotoCollectionViewController: PhotoArrayUpdateDelegate{
     func updatePhotoArray(with photoArray: [Data]) {
         DispatchQueue.main.async {
-            print("Working array is:")
+           // Accessing the photos from web
             self.imagesArray = photoArray
-            print(photoArray)
             self.collectionView.reloadData()
         }
        
     }
     
-    func updateUrlArray(_ urlArrayStorage: [PhotoWebData]) {
-        DispatchQueue.main.async {
-            print(urlArrayStorage)
-    }
-    
-    }
-    
-
     
     func didErrorOccur(error: Error) {
         print(error)
     }
     
-    
-    func updatePhotoArray(_ photoArrayStorage: [PhotoAppModel]) {
-        DispatchQueue.main.async {
-            self.array = photoArrayStorage
-            
-            print("printing...")
-            print(self.array?[1])
-        
-            if let image = self.array?[1].photoUrl{
-                print("******1")
-                print(image)
-                self.loadImage(with: image)
-                
-               
-            }
-            else{
-                print("Error loading image")
-            }
-           
-         //   print("Printing Final array here as: ")
-           // print(self.array)
-        }
-       
-    }
-    
-    
-    func loadImage(with imageString: String) {
-        let pictureUrl = URL(string: imageString)!
-        print("******2")
-          print(pictureUrl)
-        // Creating a session object with the default configuration.
-        let session = URLSession(configuration: .default)
 
-        // Define a download task. The download task will download the contents of the URL as a Data object.
-        
-        let downloadImageTask = session.dataTask(with: pictureUrl) { (data, response, error) in
-            // The download has finished.
-            if error != nil {
-                print("Error downloading cat picture: \(error)")
-            } else {
-                // No errors found.
-               
-                 print("********3")
-                print(data)
-                   
-                    if let imageData = data {
-                        // Converting data to UIImage format
-                        
-                        self.imageToDisplay = UIImage(data: imageData)
-                        self.imageArray.append((self.imageToDisplay ?? UIImage(named: "austin-smart-70350"))!)
-                        print("Image array is:")
-                        print(self.imageArray)
-                        DispatchQueue.main.async {
-                            self.collectionView.reloadData()
-                        }
-                         }else {
-                        print("Couldn't get image: Image is nil")
-                    }
-                }
-        
 
-        
-        
-    }
-        downloadImageTask.resume()
-}
 }

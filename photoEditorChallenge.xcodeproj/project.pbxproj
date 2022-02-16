@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		94FE530F27BC929300EA743E /* PhotoWebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FE530E27BC929300EA743E /* PhotoWebData.swift */; };
+		06725C39FD9BAC91123C12B6 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 780B53464AFB268643BCD448 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework */; };
+		401D4A583DB03AC63DBF1C96 /* Pods_photoEditorChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615255D454CD98011FC3DE8 /* Pods_photoEditorChallenge.framework */; };
+		6744AA8B0BC52477713464AE /* Pods_photoEditorChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1921E65EFDF55A7F4D1B9025 /* Pods_photoEditorChallengeTests.framework */; };
 		94FE531127BCAE2500EA743E /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FE531027BCAE2500EA743E /* PhotoCollectionViewController.swift */; };
 		94FE531427BCAE6A00EA743E /* PhotoArrayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FE531227BCAE6A00EA743E /* PhotoArrayCollectionViewCell.swift */; };
 		94FE531527BCAE6A00EA743E /* PhotoArrayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FE531327BCAE6A00EA743E /* PhotoArrayCollectionViewCell.xib */; };
+		94FE535527BCC4D800EA743E /* PhotoWebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FE535427BCC4D800EA743E /* PhotoWebData.swift */; };
+		94FE535727BCC56800EA743E /* SelectedPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FE535627BCC56800EA743E /* SelectedPhotoViewController.swift */; };
 		94FF5A6727BC097C00FEB338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF5A6627BC097C00FEB338 /* AppDelegate.swift */; };
 		94FF5A6927BC097C00FEB338 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF5A6827BC097C00FEB338 /* SceneDelegate.swift */; };
-		94FF5A6B27BC097C00FEB338 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF5A6A27BC097C00FEB338 /* ViewController.swift */; };
 		94FF5A6E27BC097C00FEB338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FF5A6C27BC097C00FEB338 /* Main.storyboard */; };
 		94FF5A7027BC097D00FEB338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94FF5A6F27BC097D00FEB338 /* Assets.xcassets */; };
 		94FF5A7327BC097D00FEB338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FF5A7127BC097D00FEB338 /* LaunchScreen.storyboard */; };
@@ -21,9 +24,7 @@
 		94FF5A8827BC097D00FEB338 /* photoEditorChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF5A8727BC097D00FEB338 /* photoEditorChallengeUITests.swift */; };
 		94FF5A8A27BC097D00FEB338 /* photoEditorChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF5A8927BC097D00FEB338 /* photoEditorChallengeUITestsLaunchTests.swift */; };
 		94FF5A9727BC09EF00FEB338 /* PhotoRecieverFromWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF5A9627BC09EF00FEB338 /* PhotoRecieverFromWeb.swift */; };
-		94FF5A9927BC18B000FEB338 /* PhotoJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF5A9827BC18B000FEB338 /* PhotoJsonModel.swift */; };
 		94FF5A9B27BC1E4400FEB338 /* PhotoAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF5A9A27BC1E4400FEB338 /* PhotoAppModel.swift */; };
-		94FF5A9D27BC30BA00FEB338 /* PhotoArraystorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF5A9C27BC30BA00FEB338 /* PhotoArraystorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,14 +45,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		94FE530E27BC929300EA743E /* PhotoWebData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWebData.swift; sourceTree = "<group>"; };
+		16EB3FC33EDAC610D1026BF7 /* Pods-photoEditorChallenge-photoEditorChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallenge-photoEditorChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-photoEditorChallenge-photoEditorChallengeUITests/Pods-photoEditorChallenge-photoEditorChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1921E65EFDF55A7F4D1B9025 /* Pods_photoEditorChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photoEditorChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3334620CA785CF76324792DA /* Pods-photoEditorChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallenge.debug.xcconfig"; path = "Target Support Files/Pods-photoEditorChallenge/Pods-photoEditorChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		51E64AD0DD03F954626D192D /* Pods-photoEditorChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallenge.release.xcconfig"; path = "Target Support Files/Pods-photoEditorChallenge/Pods-photoEditorChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		5FD9D7440BD0AA6AEF1C3302 /* Pods-photoEditorChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-photoEditorChallengeTests/Pods-photoEditorChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		780B53464AFB268643BCD448 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photoEditorChallenge_photoEditorChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C91E917BBEDECDCD718C0C /* Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-photoEditorChallenge-photoEditorChallengeUITests/Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		94FE531027BCAE2500EA743E /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		94FE531227BCAE6A00EA743E /* PhotoArrayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoArrayCollectionViewCell.swift; sourceTree = "<group>"; };
 		94FE531327BCAE6A00EA743E /* PhotoArrayCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoArrayCollectionViewCell.xib; sourceTree = "<group>"; };
+		94FE535427BCC4D800EA743E /* PhotoWebData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWebData.swift; sourceTree = "<group>"; };
+		94FE535627BCC56800EA743E /* SelectedPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedPhotoViewController.swift; sourceTree = "<group>"; };
 		94FF5A6327BC097C00FEB338 /* photoEditorChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photoEditorChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FF5A6627BC097C00FEB338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94FF5A6827BC097C00FEB338 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		94FF5A6A27BC097C00FEB338 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		94FF5A6D27BC097C00FEB338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94FF5A6F27BC097D00FEB338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94FF5A7227BC097D00FEB338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,9 +70,9 @@
 		94FF5A8727BC097D00FEB338 /* photoEditorChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoEditorChallengeUITests.swift; sourceTree = "<group>"; };
 		94FF5A8927BC097D00FEB338 /* photoEditorChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoEditorChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		94FF5A9627BC09EF00FEB338 /* PhotoRecieverFromWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRecieverFromWeb.swift; sourceTree = "<group>"; };
-		94FF5A9827BC18B000FEB338 /* PhotoJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoJsonModel.swift; sourceTree = "<group>"; };
 		94FF5A9A27BC1E4400FEB338 /* PhotoAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppModel.swift; sourceTree = "<group>"; };
-		94FF5A9C27BC30BA00FEB338 /* PhotoArraystorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoArraystorage.swift; sourceTree = "<group>"; };
+		9615255D454CD98011FC3DE8 /* Pods_photoEditorChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photoEditorChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6B5AAE48DE6E75B36283A3 /* Pods-photoEditorChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-photoEditorChallengeTests/Pods-photoEditorChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401D4A583DB03AC63DBF1C96 /* Pods_photoEditorChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6744AA8B0BC52477713464AE /* Pods_photoEditorChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +96,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06725C39FD9BAC91123C12B6 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54B8309DCD7E5DD78DFA029B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9615255D454CD98011FC3DE8 /* Pods_photoEditorChallenge.framework */,
+				780B53464AFB268643BCD448 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework */,
+				1921E65EFDF55A7F4D1B9025 /* Pods_photoEditorChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		94FF5A5A27BC097C00FEB338 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +120,8 @@
 				94FF5A7C27BC097D00FEB338 /* photoEditorChallengeTests */,
 				94FF5A8627BC097D00FEB338 /* photoEditorChallengeUITests */,
 				94FF5A6427BC097C00FEB338 /* Products */,
+				A36458AFBF6E4D78056159B5 /* Pods */,
+				54B8309DCD7E5DD78DFA029B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,19 +140,17 @@
 			children = (
 				94FF5A6627BC097C00FEB338 /* AppDelegate.swift */,
 				94FF5A6827BC097C00FEB338 /* SceneDelegate.swift */,
-				94FF5A6A27BC097C00FEB338 /* ViewController.swift */,
 				94FF5A6C27BC097C00FEB338 /* Main.storyboard */,
 				94FF5A6F27BC097D00FEB338 /* Assets.xcassets */,
 				94FF5A7127BC097D00FEB338 /* LaunchScreen.storyboard */,
 				94FF5A7427BC097D00FEB338 /* Info.plist */,
 				94FF5A9627BC09EF00FEB338 /* PhotoRecieverFromWeb.swift */,
-				94FF5A9827BC18B000FEB338 /* PhotoJsonModel.swift */,
 				94FF5A9A27BC1E4400FEB338 /* PhotoAppModel.swift */,
-				94FF5A9C27BC30BA00FEB338 /* PhotoArraystorage.swift */,
-				94FE530E27BC929300EA743E /* PhotoWebData.swift */,
+				94FE535427BCC4D800EA743E /* PhotoWebData.swift */,
 				94FE531027BCAE2500EA743E /* PhotoCollectionViewController.swift */,
 				94FE531227BCAE6A00EA743E /* PhotoArrayCollectionViewCell.swift */,
 				94FE531327BCAE6A00EA743E /* PhotoArrayCollectionViewCell.xib */,
+				94FE535627BCC56800EA743E /* SelectedPhotoViewController.swift */,
 			);
 			path = photoEditorChallenge;
 			sourceTree = "<group>";
@@ -151,6 +172,20 @@
 			path = photoEditorChallengeUITests;
 			sourceTree = "<group>";
 		};
+		A36458AFBF6E4D78056159B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3334620CA785CF76324792DA /* Pods-photoEditorChallenge.debug.xcconfig */,
+				51E64AD0DD03F954626D192D /* Pods-photoEditorChallenge.release.xcconfig */,
+				16EB3FC33EDAC610D1026BF7 /* Pods-photoEditorChallenge-photoEditorChallengeUITests.debug.xcconfig */,
+				84C91E917BBEDECDCD718C0C /* Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig */,
+				5FD9D7440BD0AA6AEF1C3302 /* Pods-photoEditorChallengeTests.debug.xcconfig */,
+				BC6B5AAE48DE6E75B36283A3 /* Pods-photoEditorChallengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94FF5A8D27BC097D00FEB338 /* Build configuration list for PBXNativeTarget "photoEditorChallenge" */;
 			buildPhases = (
+				0CA6A3E86D57AF99E5D862BA /* [CP] Check Pods Manifest.lock */,
 				94FF5A5F27BC097C00FEB338 /* Sources */,
 				94FF5A6027BC097C00FEB338 /* Frameworks */,
 				94FF5A6127BC097C00FEB338 /* Resources */,
+				BF43F1B5AA3546C87B90296A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94FF5A9027BC097D00FEB338 /* Build configuration list for PBXNativeTarget "photoEditorChallengeTests" */;
 			buildPhases = (
+				EFACAE6C4B1EFC8519DDF359 /* [CP] Check Pods Manifest.lock */,
 				94FF5A7527BC097D00FEB338 /* Sources */,
 				94FF5A7627BC097D00FEB338 /* Frameworks */,
 				94FF5A7727BC097D00FEB338 /* Resources */,
@@ -193,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94FF5A9327BC097D00FEB338 /* Build configuration list for PBXNativeTarget "photoEditorChallengeUITests" */;
 			buildPhases = (
+				AFD74A396E376D87695FE23F /* [CP] Check Pods Manifest.lock */,
 				94FF5A7F27BC097D00FEB338 /* Sources */,
 				94FF5A8027BC097D00FEB338 /* Frameworks */,
 				94FF5A8127BC097D00FEB338 /* Resources */,
+				5EBDCC6B11AA4C6EFC1E073C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -278,21 +318,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CA6A3E86D57AF99E5D862BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-photoEditorChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EBDCC6B11AA4C6EFC1E073C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-photoEditorChallenge-photoEditorChallengeUITests/Pods-photoEditorChallenge-photoEditorChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-photoEditorChallenge-photoEditorChallengeUITests/Pods-photoEditorChallenge-photoEditorChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-photoEditorChallenge-photoEditorChallengeUITests/Pods-photoEditorChallenge-photoEditorChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFD74A396E376D87695FE23F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-photoEditorChallenge-photoEditorChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF43F1B5AA3546C87B90296A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-photoEditorChallenge/Pods-photoEditorChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-photoEditorChallenge/Pods-photoEditorChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-photoEditorChallenge/Pods-photoEditorChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFACAE6C4B1EFC8519DDF359 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-photoEditorChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		94FF5A5F27BC097C00FEB338 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94FF5A9D27BC30BA00FEB338 /* PhotoArraystorage.swift in Sources */,
 				94FE531427BCAE6A00EA743E /* PhotoArrayCollectionViewCell.swift in Sources */,
-				94FF5A6B27BC097C00FEB338 /* ViewController.swift in Sources */,
-				94FF5A9927BC18B000FEB338 /* PhotoJsonModel.swift in Sources */,
-				94FE530F27BC929300EA743E /* PhotoWebData.swift in Sources */,
 				94FE531127BCAE2500EA743E /* PhotoCollectionViewController.swift in Sources */,
+				94FE535727BCC56800EA743E /* SelectedPhotoViewController.swift in Sources */,
 				94FF5A6727BC097C00FEB338 /* AppDelegate.swift in Sources */,
 				94FF5A9727BC09EF00FEB338 /* PhotoRecieverFromWeb.swift in Sources */,
 				94FF5A9B27BC1E4400FEB338 /* PhotoAppModel.swift in Sources */,
 				94FF5A6927BC097C00FEB338 /* SceneDelegate.swift in Sources */,
+				94FE535527BCC4D800EA743E /* PhotoWebData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +607,7 @@
 		};
 		94FF5A8E27BC097D00FEB338 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3334620CA785CF76324792DA /* Pods-photoEditorChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -494,6 +636,7 @@
 		};
 		94FF5A8F27BC097D00FEB338 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51E64AD0DD03F954626D192D /* Pods-photoEditorChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -522,6 +665,7 @@
 		};
 		94FF5A9127BC097D00FEB338 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FD9D7440BD0AA6AEF1C3302 /* Pods-photoEditorChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -547,6 +691,7 @@
 		};
 		94FF5A9227BC097D00FEB338 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC6B5AAE48DE6E75B36283A3 /* Pods-photoEditorChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -572,6 +717,7 @@
 		};
 		94FF5A9427BC097D00FEB338 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16EB3FC33EDAC610D1026BF7 /* Pods-photoEditorChallenge-photoEditorChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -595,6 +741,7 @@
 		};
 		94FF5A9527BC097D00FEB338 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84C91E917BBEDECDCD718C0C /* Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
