@@ -12,7 +12,7 @@ class PhotoArrayCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var photoView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
     
     static func nib() -> UINib{

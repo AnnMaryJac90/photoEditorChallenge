@@ -32,22 +32,21 @@ class PhotoCollectionViewController: UICollectionViewController {
     
     var imageArray : [UIImage] = []
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.reciever.getUrlData()
         
-        // Setting the delegate for protocol defined within photoRecieverFromWeb
+    // Setting the delegate for protocol defined within photoRecieverFromWeb
         
         reciever.delegate = self
         
     //Registering the nib to PhotoCell
-     self.collectionView.register(PhotoArrayCollectionViewCell.nib(), forCellWithReuseIdentifier: "PhotoArrayCollectionViewCell")
-        
-      
-        
+        self.collectionView.register(PhotoArrayCollectionViewCell.nib(), forCellWithReuseIdentifier: "PhotoArrayCollectionViewCell")
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: imageWidth, height: imageWidth)
-        
         collectionView.collectionViewLayout = layout
         collectionView.reloadData()
       
@@ -56,7 +55,7 @@ class PhotoCollectionViewController: UICollectionViewController {
     
 
   
-    // MARK: UICollectionViewDataSource
+    //MARK: -    UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
        
@@ -71,12 +70,9 @@ class PhotoCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PhotoArrayCollectionViewCell
-        //cell.backgroundColor = .blue
         let image = UIImage(data: imagesArray[indexPath.row])
         imageFile = imagesArray[indexPath.row]
         cell.photoView.image = image
-        // Configure the cell
-    
         return cell
     }
     
@@ -84,8 +80,8 @@ class PhotoCollectionViewController: UICollectionViewController {
         let cell = collectionView.cellForItem(at: indexPath)
         
        imageSelected = UIImage(data: imagesArray[indexPath.row])
-       
         
+    // Selected Photo to a new View
         
         self.performSegue(withIdentifier: "toSelectedPhotoView", sender: self)
         
@@ -148,11 +144,14 @@ extension PhotoCollectionViewController: UICollectionViewDelegateFlowLayout {
 
 extension PhotoCollectionViewController: PhotoArrayUpdateDelegate{
     func updatePhotoArray(with photoArray: [Data]) {
+     
         DispatchQueue.main.async {
            // Accessing the photos from web
             self.imagesArray = photoArray
             self.collectionView.reloadData()
+           
         }
+      
        
     }
     

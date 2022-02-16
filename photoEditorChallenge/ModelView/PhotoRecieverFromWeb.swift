@@ -12,36 +12,33 @@ class PhotoRecieverFromWeb {
    let urlString = "https://eulerity-hackathon.appspot.com/image"
     
     var photoArrayFinal : [PhotoAppModel]?
-  //  var photoArrayObj : PhotoWebData?
     var photoList: [Data] = []
     var delegate : PhotoArrayUpdateDelegate?
   
 
     func getUrlData()  {
         
-          //Create a URL
+       //Create a URL
         
         if let url = URL(string: urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!){
             
             
-            let request = URLRequest(url: url)
+          //  let request = URLRequest(url: url)
             
-            //Create a Session
+        //Create a Session
             
             let session = URLSession(configuration: .default)
             
             
-            //Assign a task
+        //Assign a task
             
             let task = session.dataTask(with: url) { [self] data, response, error in
                 if error != nil{
-                    print("error")
+                    print("Unable to start a session \(String(describing: error))")
                 }
                 if let safeData = data {
                     
-                    if let photoArrayFinal = self.jsonParsing(with: safeData){
-                       
-                    }
+                   self.jsonParsing(with: safeData)
                     
                     
                 }
@@ -57,7 +54,7 @@ class PhotoRecieverFromWeb {
     
     
     
-    func jsonParsing(with data: Data)-> [PhotoAppModel]? {
+    func jsonParsing(with data: Data) {
         let decoder = JSONDecoder()
         var photoArray : [PhotoAppModel] = []
         do {
@@ -71,19 +68,15 @@ class PhotoRecieverFromWeb {
                     
                     
                         self.loadImage(with: photo)
-                        
-                       
-                   
+                    
                 }
-                
             }
-            
-            return photoArray
+      
         }
         
         catch {
-            print(error)
-            return nil
+            print("Error while Parsing JSON : \(error)")
+            
         }
     }
     
@@ -113,10 +106,7 @@ class PhotoRecieverFromWeb {
                         delegate?.updatePhotoArray(with: photoList)
                         
                         }
-                     
                 }
-           
-             
                
             }
 

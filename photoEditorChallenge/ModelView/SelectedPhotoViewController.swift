@@ -8,15 +8,12 @@
 import UIKit
 import CoreImage
 import JLStickerTextView
-import TextDrawer
+//import TextDrawer
 import Alamofire
 
 
 class SelectedPhotoViewController: UIViewController {
-   
-   // @IBOutlet var stickerView: JLStickerImageView!
-   // stickerView.addLabel()
-    
+ 
      var imageToDisplay : UIImage?
     var imageFile : Data?
     @IBOutlet weak var selectedPhotoView: JLStickerImageView!
@@ -47,20 +44,23 @@ class SelectedPhotoViewController: UIViewController {
 
         }
     
-
+// Reseting the filter applied
+    
     @IBAction func resetButtonTapped(_ sender: UIButton) {
       selectedPhotoView.image = imageToDisplay
-      //  stickerView.addLabel()
+     
     }
     
 
-    
+// Saving the edited photo
     @IBAction func saveButonTapped(_ sender: UIButton) {
         print("Will save the photo soon")
         postImage()
         
     }
     
+    
+// Adding text to photo using library : JLStickerTextView
     @IBAction func addTextButtonTapped(_ sender: UIButton) {
         selectedPhotoView.addLabel()
         

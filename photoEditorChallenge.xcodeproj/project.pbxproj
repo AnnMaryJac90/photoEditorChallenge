@@ -117,6 +117,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		94FBA84127BDC1EB00A0DBDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94FBA83F27BDB3A600A0DBDD /* UploadUrlModel.swift */,
+				94FE535427BCC4D800EA743E /* PhotoWebData.swift */,
+				94FF5A9A27BC1E4400FEB338 /* PhotoAppModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94FBA84227BDC20B00A0DBDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94FE531327BCAE6A00EA743E /* PhotoArrayCollectionViewCell.xib */,
+				94FF5A6C27BC097C00FEB338 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94FBA84327BDC24A00A0DBDD /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				94FF5A9627BC09EF00FEB338 /* PhotoRecieverFromWeb.swift */,
+				94FE535627BCC56800EA743E /* SelectedPhotoViewController.swift */,
+				94FE531227BCAE6A00EA743E /* PhotoArrayCollectionViewCell.swift */,
+				94FE531027BCAE2500EA743E /* PhotoCollectionViewController.swift */,
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
 		94FF5A5A27BC097C00FEB338 = {
 			isa = PBXGroup;
 			children = (
@@ -144,18 +174,12 @@
 			children = (
 				94FF5A6627BC097C00FEB338 /* AppDelegate.swift */,
 				94FF5A6827BC097C00FEB338 /* SceneDelegate.swift */,
-				94FF5A6C27BC097C00FEB338 /* Main.storyboard */,
 				94FF5A6F27BC097D00FEB338 /* Assets.xcassets */,
 				94FF5A7127BC097D00FEB338 /* LaunchScreen.storyboard */,
 				94FF5A7427BC097D00FEB338 /* Info.plist */,
-				94FF5A9627BC09EF00FEB338 /* PhotoRecieverFromWeb.swift */,
-				94FF5A9A27BC1E4400FEB338 /* PhotoAppModel.swift */,
-				94FE535427BCC4D800EA743E /* PhotoWebData.swift */,
-				94FE531027BCAE2500EA743E /* PhotoCollectionViewController.swift */,
-				94FE531227BCAE6A00EA743E /* PhotoArrayCollectionViewCell.swift */,
-				94FE531327BCAE6A00EA743E /* PhotoArrayCollectionViewCell.xib */,
-				94FE535627BCC56800EA743E /* SelectedPhotoViewController.swift */,
-				94FBA83F27BDB3A600A0DBDD /* UploadUrlModel.swift */,
+				94FBA84127BDC1EB00A0DBDD /* Model */,
+				94FBA84227BDC20B00A0DBDD /* View */,
+				94FBA84327BDC24A00A0DBDD /* ModelView */,
 			);
 			path = photoEditorChallenge;
 			sourceTree = "<group>";
