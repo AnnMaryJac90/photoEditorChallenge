@@ -30,6 +30,7 @@ class PhotoCollectionViewController: UICollectionViewController {
     var imageToDisplay : UIImage?
     var activityView = UIActivityIndicatorView(style: .large)
     override func viewDidLoad() {
+        self.navigationItem.title = "Photo Editor"
         activityView.color = .purple
            activityView.center = self.view.center
            self.view.addSubview(activityView)

@@ -145,14 +145,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ4-nq-Iwt">
-                                <rect key="frame" x="146" y="119" width="131" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ4-nq-Iwt">
+                                <rect key="frame" x="186.5" y="188" width="41" height="34"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Photo Editor">
+                                    <fragment content="Edit">
                                         <attributes>
-                                            <color key="NSColor" red="0.61440727250000005" green="0.49696927219999998" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="24" name="ChalkboardSE-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -162,8 +162,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="gZ4-nq-Iwt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="5lD-5A-Olp"/>
                             <constraint firstItem="Q1d-79-Lav" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="98P-hz-fQj"/>
                             <constraint firstItem="wQO-pd-TPI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ABs-Oo-wwJ"/>
+                            <constraint firstItem="gZ4-nq-Iwt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Csq-QW-Eb6"/>
                             <constraint firstItem="R0X-SS-KPk" firstAttribute="top" secondItem="Q1d-79-Lav" secondAttribute="bottom" constant="20" id="RN3-JQ-3lz"/>
                             <constraint firstItem="Q1d-79-Lav" firstAttribute="top" secondItem="wQO-pd-TPI" secondAttribute="bottom" constant="90" id="eQp-jr-gxi"/>
                             <constraint firstItem="R0X-SS-KPk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ezk-HL-6c6"/>
