@@ -2,7 +2,7 @@
 //  PhotoRecieverFromWeb.swift
 //  photoEditorChallenge
 //
-//  Created by Anil Thomas on 2/15/22.
+//  Created by Ann Mary Jacob on 2/15/22.
 //
 
 import Foundation
@@ -55,7 +55,7 @@ class PhotoRecieverFromWeb {
     
     
     func jsonParsing(with data: Data) {
-        let decoder = JSONDecoder()
+        
         var photoArray : [PhotoAppModel] = []
         do {
               let json = try! JSONSerialization.jsonObject(with: data, options: []) as? [[String:String]]
@@ -94,7 +94,7 @@ class PhotoRecieverFromWeb {
         let downloadImageTask = session.dataTask(with: pictureUrl) { [self] (data, response, error) in
             // The download has finished.
             if error != nil {
-                print("Error downloading picture: \(error)")
+                print("Error downloading photo: \(String(describing: error))")
             } else {
                 
                     if let imageData = data {
@@ -123,5 +123,5 @@ class PhotoRecieverFromWeb {
 protocol PhotoArrayUpdateDelegate{
   
     func updatePhotoArray(with photoArray : [Data])
-    func didErrorOccur(error : Error)
+    
 }

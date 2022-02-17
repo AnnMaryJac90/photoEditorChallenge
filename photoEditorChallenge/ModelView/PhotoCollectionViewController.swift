@@ -2,7 +2,7 @@
 //  CollectionViewController.swift
 //  photoEditorChallenge
 //
-//  Created by Anil Thomas on 2/15/22.
+//  Created by Ann Mary Jacob on 2/15/22.
 //
 
 import UIKit
@@ -28,7 +28,7 @@ class PhotoCollectionViewController: UICollectionViewController {
     var imageFile : Data?
     
     var array : [PhotoAppModel]?
-    var imageToDisplay : UIImage? = UIImage(named: "austin-smart-70350")
+    var imageToDisplay : UIImage?
     
     var imageArray : [UIImage] = []
 
@@ -140,7 +140,7 @@ extension PhotoCollectionViewController: UICollectionViewDelegateFlowLayout {
 }
 
 
-//MARK : -   Delegate Protocol definition
+//MARK: -  Delegate Protocol definition
 
 extension PhotoCollectionViewController: PhotoArrayUpdateDelegate{
     func updatePhotoArray(with photoArray: [Data]) {
@@ -156,9 +156,7 @@ extension PhotoCollectionViewController: PhotoArrayUpdateDelegate{
     }
     
     
-    func didErrorOccur(error: Error) {
-        print(error)
-    }
+   
     
 
 
