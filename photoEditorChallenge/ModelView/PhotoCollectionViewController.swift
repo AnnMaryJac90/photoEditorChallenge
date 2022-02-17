@@ -28,8 +28,12 @@ class PhotoCollectionViewController: UICollectionViewController {
     var imageURLArray : [String] = []
     var array : [PhotoAppModel]?
     var imageToDisplay : UIImage?
-    
+    var activityView = UIActivityIndicatorView(style: .large)
     override func viewDidLoad() {
+        activityView.color = .purple
+           activityView.center = self.view.center
+           self.view.addSubview(activityView)
+           activityView.startAnimating()
         super.viewDidLoad()
         self.reciever.getUrlData()
         
@@ -120,5 +124,6 @@ extension PhotoCollectionViewController: PhotoArrayUpdateDelegate{
             self.imageURLArray = photoUrlArray
             self.collectionView.reloadData()
         }
+        activityView.stopAnimating()
     }   
 }
