@@ -104,6 +104,10 @@ class SelectedPhotoViewController: UIViewController {
         var sURL : String
         var bodyKeyValue = [RequestBodyFormDataKeyValue]()
         DispatchQueue.main.async { [self] in
+            var activityView = UIActivityIndicatorView(style: .whiteLarge)
+               activityView.center = self.view.center
+               self.view.addSubview(activityView)
+               activityView.startAnimating()
         let image = self.selectedPhotoView.image
         let imgData = image!.jpegData(compressionQuality: 0.2)!
             bodyKeyValue.append(RequestBodyFormDataKeyValue(sKey: K.uploadParameterKey1, sVal: K.uploadParameterValue1))
@@ -128,6 +132,7 @@ class SelectedPhotoViewController: UIViewController {
                         let alert = UIAlertController(title: "Success", message: "Successfully uploaded the image", preferredStyle: .alert)
                         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
                         alert.addAction(action)
+                        activityView.stopAnimating()
                         self.present(alert, animated: true, completion: nil)
                     }else {
                         print("event=postImage message=Error occurred while uploading the image errorStatusCode= \(response.response?.statusCode) errorStatusDescription= \(response.response?.description)")
