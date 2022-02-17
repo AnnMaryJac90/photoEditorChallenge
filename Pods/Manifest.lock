@@ -1,0 +1,21 @@
+PODS:
+  - JLStickerTextView (0.1.2)
+
+DEPENDENCIES:
+  - JLStickerTextView (from `https://github.com/Textcat/JLStickerTextView.git`)
+
+EXTERNAL SOURCES:
+  JLStickerTextView:
+    :git: https://github.com/Textcat/JLStickerTextView.git
+
+CHECKOUT OPTIONS:
+  JLStickerTextView:
+    :commit: 45becbfeb0aa0dc2721fc31d1f900de40e187e78
+    :git: https://github.com/Textcat/JLStickerTextView.git
+
+SPEC CHECKSUMS:
+  JLStickerTextView: 99158380c95dc5455568892beb81d0529f3a547d
+
+PODFILE CHECKSUM: b816608bee65f5f4e855df719523787f333cf508
+
+COCOAPODS: 1.11.2

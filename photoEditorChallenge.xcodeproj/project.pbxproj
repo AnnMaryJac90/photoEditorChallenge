@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06725C39FD9BAC91123C12B6 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 780B53464AFB268643BCD448 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework */; };
-		401D4A583DB03AC63DBF1C96 /* Pods_photoEditorChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9615255D454CD98011FC3DE8 /* Pods_photoEditorChallenge.framework */; };
-		6744AA8B0BC52477713464AE /* Pods_photoEditorChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1921E65EFDF55A7F4D1B9025 /* Pods_photoEditorChallengeTests.framework */; };
+		1CB5B42FAFC6632F09F69E77 /* Pods_photoEditorChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FDF7010B1142712AA2AC73 /* Pods_photoEditorChallengeTests.framework */; };
 		94D31AB127BE322E00A54560 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D31AB027BE322E00A54560 /* K.swift */; };
 		94FBA83E27BD68F800A0DBDD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 94FBA83D27BD68F800A0DBDD /* Alamofire */; };
 		94FBA84027BDB3A600A0DBDD /* UploadUrlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FBA83F27BDB3A600A0DBDD /* UploadUrlModel.swift */; };
@@ -27,6 +25,8 @@
 		94FF5A8A27BC097D00FEB338 /* photoEditorChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF5A8927BC097D00FEB338 /* photoEditorChallengeUITestsLaunchTests.swift */; };
 		94FF5A9727BC09EF00FEB338 /* PhotoRecieverFromWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF5A9627BC09EF00FEB338 /* PhotoRecieverFromWeb.swift */; };
 		94FF5A9B27BC1E4400FEB338 /* PhotoAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF5A9A27BC1E4400FEB338 /* PhotoAppModel.swift */; };
+		A8727A9EAE7C03D397C7F68F /* Pods_photoEditorChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C07FF5F94DAE499946B0A424 /* Pods_photoEditorChallenge.framework */; };
+		C941FFD4D706E168B4D10333 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892749EE0EB321F8821F4770 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,13 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16EB3FC33EDAC610D1026BF7 /* Pods-photoEditorChallenge-photoEditorChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallenge-photoEditorChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-photoEditorChallenge-photoEditorChallengeUITests/Pods-photoEditorChallenge-photoEditorChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		1921E65EFDF55A7F4D1B9025 /* Pods_photoEditorChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photoEditorChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3334620CA785CF76324792DA /* Pods-photoEditorChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallenge.debug.xcconfig"; path = "Target Support Files/Pods-photoEditorChallenge/Pods-photoEditorChallenge.debug.xcconfig"; sourceTree = "<group>"; };
-		51E64AD0DD03F954626D192D /* Pods-photoEditorChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallenge.release.xcconfig"; path = "Target Support Files/Pods-photoEditorChallenge/Pods-photoEditorChallenge.release.xcconfig"; sourceTree = "<group>"; };
-		5FD9D7440BD0AA6AEF1C3302 /* Pods-photoEditorChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-photoEditorChallengeTests/Pods-photoEditorChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		780B53464AFB268643BCD448 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photoEditorChallenge_photoEditorChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84C91E917BBEDECDCD718C0C /* Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-photoEditorChallenge-photoEditorChallengeUITests/Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		38E6BF0568A2DC3D645A3730 /* Pods-photoEditorChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-photoEditorChallengeTests/Pods-photoEditorChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		52CD90D188EBB9312C69BD0F /* Pods-photoEditorChallenge-photoEditorChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallenge-photoEditorChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-photoEditorChallenge-photoEditorChallengeUITests/Pods-photoEditorChallenge-photoEditorChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		55FDF7010B1142712AA2AC73 /* Pods_photoEditorChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photoEditorChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		636468335A1199C7875A70E0 /* Pods-photoEditorChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallenge.debug.xcconfig"; path = "Target Support Files/Pods-photoEditorChallenge/Pods-photoEditorChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		892749EE0EB321F8821F4770 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photoEditorChallenge_photoEditorChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D31AB027BE322E00A54560 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		94FBA83F27BDB3A600A0DBDD /* UploadUrlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadUrlModel.swift; sourceTree = "<group>"; };
 		94FE531027BCAE2500EA743E /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
@@ -74,8 +72,10 @@
 		94FF5A8927BC097D00FEB338 /* photoEditorChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoEditorChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		94FF5A9627BC09EF00FEB338 /* PhotoRecieverFromWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRecieverFromWeb.swift; sourceTree = "<group>"; };
 		94FF5A9A27BC1E4400FEB338 /* PhotoAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppModel.swift; sourceTree = "<group>"; };
-		9615255D454CD98011FC3DE8 /* Pods_photoEditorChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photoEditorChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC6B5AAE48DE6E75B36283A3 /* Pods-photoEditorChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-photoEditorChallengeTests/Pods-photoEditorChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A789496B848FA1B48DE3FD02 /* Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-photoEditorChallenge-photoEditorChallengeUITests/Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C07FF5F94DAE499946B0A424 /* Pods_photoEditorChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_photoEditorChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAFFDA249528210FF232A5A /* Pods-photoEditorChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-photoEditorChallengeTests/Pods-photoEditorChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DFB66147B1ABE7834EB57345 /* Pods-photoEditorChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-photoEditorChallenge.release.xcconfig"; path = "Target Support Files/Pods-photoEditorChallenge/Pods-photoEditorChallenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				401D4A583DB03AC63DBF1C96 /* Pods_photoEditorChallenge.framework in Frameworks */,
 				94FBA83E27BD68F800A0DBDD /* Alamofire in Frameworks */,
+				A8727A9EAE7C03D397C7F68F /* Pods_photoEditorChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6744AA8B0BC52477713464AE /* Pods_photoEditorChallengeTests.framework in Frameworks */,
+				1CB5B42FAFC6632F09F69E77 /* Pods_photoEditorChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,23 +100,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06725C39FD9BAC91123C12B6 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework in Frameworks */,
+				C941FFD4D706E168B4D10333 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		54B8309DCD7E5DD78DFA029B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9615255D454CD98011FC3DE8 /* Pods_photoEditorChallenge.framework */,
-				780B53464AFB268643BCD448 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework */,
-				1921E65EFDF55A7F4D1B9025 /* Pods_photoEditorChallengeTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		94FBA84127BDC1EB00A0DBDD /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +145,7 @@
 				94FF5A8627BC097D00FEB338 /* photoEditorChallengeUITests */,
 				94FF5A6427BC097C00FEB338 /* Products */,
 				A36458AFBF6E4D78056159B5 /* Pods */,
-				54B8309DCD7E5DD78DFA029B /* Frameworks */,
+				B79EDD42548A2496BDAC94B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -204,14 +194,24 @@
 		A36458AFBF6E4D78056159B5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3334620CA785CF76324792DA /* Pods-photoEditorChallenge.debug.xcconfig */,
-				51E64AD0DD03F954626D192D /* Pods-photoEditorChallenge.release.xcconfig */,
-				16EB3FC33EDAC610D1026BF7 /* Pods-photoEditorChallenge-photoEditorChallengeUITests.debug.xcconfig */,
-				84C91E917BBEDECDCD718C0C /* Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig */,
-				5FD9D7440BD0AA6AEF1C3302 /* Pods-photoEditorChallengeTests.debug.xcconfig */,
-				BC6B5AAE48DE6E75B36283A3 /* Pods-photoEditorChallengeTests.release.xcconfig */,
+				636468335A1199C7875A70E0 /* Pods-photoEditorChallenge.debug.xcconfig */,
+				DFB66147B1ABE7834EB57345 /* Pods-photoEditorChallenge.release.xcconfig */,
+				52CD90D188EBB9312C69BD0F /* Pods-photoEditorChallenge-photoEditorChallengeUITests.debug.xcconfig */,
+				A789496B848FA1B48DE3FD02 /* Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig */,
+				DCAFFDA249528210FF232A5A /* Pods-photoEditorChallengeTests.debug.xcconfig */,
+				38E6BF0568A2DC3D645A3730 /* Pods-photoEditorChallengeTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B79EDD42548A2496BDAC94B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C07FF5F94DAE499946B0A424 /* Pods_photoEditorChallenge.framework */,
+				892749EE0EB321F8821F4770 /* Pods_photoEditorChallenge_photoEditorChallengeUITests.framework */,
+				55FDF7010B1142712AA2AC73 /* Pods_photoEditorChallengeTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,11 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94FF5A8D27BC097D00FEB338 /* Build configuration list for PBXNativeTarget "photoEditorChallenge" */;
 			buildPhases = (
-				0CA6A3E86D57AF99E5D862BA /* [CP] Check Pods Manifest.lock */,
+				52D130FFD7395AB09F5913A3 /* [CP] Check Pods Manifest.lock */,
 				94FF5A5F27BC097C00FEB338 /* Sources */,
 				94FF5A6027BC097C00FEB338 /* Frameworks */,
 				94FF5A6127BC097C00FEB338 /* Resources */,
-				BF43F1B5AA3546C87B90296A /* [CP] Embed Pods Frameworks */,
+				722225DB836A6F4240164997 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,7 +243,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94FF5A9027BC097D00FEB338 /* Build configuration list for PBXNativeTarget "photoEditorChallengeTests" */;
 			buildPhases = (
-				EFACAE6C4B1EFC8519DDF359 /* [CP] Check Pods Manifest.lock */,
+				FEFB65785FC5D02DBB4646C9 /* [CP] Check Pods Manifest.lock */,
 				94FF5A7527BC097D00FEB338 /* Sources */,
 				94FF5A7627BC097D00FEB338 /* Frameworks */,
 				94FF5A7727BC097D00FEB338 /* Resources */,
@@ -262,11 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94FF5A9327BC097D00FEB338 /* Build configuration list for PBXNativeTarget "photoEditorChallengeUITests" */;
 			buildPhases = (
-				AFD74A396E376D87695FE23F /* [CP] Check Pods Manifest.lock */,
+				5361CFF353D4AB0FA02469CF /* [CP] Check Pods Manifest.lock */,
 				94FF5A7F27BC097D00FEB338 /* Sources */,
 				94FF5A8027BC097D00FEB338 /* Frameworks */,
 				94FF5A8127BC097D00FEB338 /* Resources */,
-				5EBDCC6B11AA4C6EFC1E073C /* [CP] Embed Pods Frameworks */,
+				B3188C7FD0ECCE57822E3F6D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,7 +311,7 @@
 			);
 			mainGroup = 94FF5A5A27BC097C00FEB338;
 			packageReferences = (
-				94FBA83C27BD68F800A0DBDD /* XCRemoteSwiftPackageReference "Alamofire" */,
+				94FBA83C27BD68F800A0DBDD /* XCRemoteSwiftPackageReference "Alamofire.git" */,
 			);
 			productRefGroup = 94FF5A6427BC097C00FEB338 /* Products */;
 			projectDirPath = "";
@@ -353,7 +353,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0CA6A3E86D57AF99E5D862BA /* [CP] Check Pods Manifest.lock */ = {
+		52D130FFD7395AB09F5913A3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,24 +375,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5EBDCC6B11AA4C6EFC1E073C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-photoEditorChallenge-photoEditorChallengeUITests/Pods-photoEditorChallenge-photoEditorChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-photoEditorChallenge-photoEditorChallengeUITests/Pods-photoEditorChallenge-photoEditorChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-photoEditorChallenge-photoEditorChallengeUITests/Pods-photoEditorChallenge-photoEditorChallengeUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AFD74A396E376D87695FE23F /* [CP] Check Pods Manifest.lock */ = {
+		5361CFF353D4AB0FA02469CF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -414,7 +397,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BF43F1B5AA3546C87B90296A /* [CP] Embed Pods Frameworks */ = {
+		722225DB836A6F4240164997 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -431,7 +414,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-photoEditorChallenge/Pods-photoEditorChallenge-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EFACAE6C4B1EFC8519DDF359 /* [CP] Check Pods Manifest.lock */ = {
+		B3188C7FD0ECCE57822E3F6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-photoEditorChallenge-photoEditorChallengeUITests/Pods-photoEditorChallenge-photoEditorChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-photoEditorChallenge-photoEditorChallengeUITests/Pods-photoEditorChallenge-photoEditorChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-photoEditorChallenge-photoEditorChallengeUITests/Pods-photoEditorChallenge-photoEditorChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEFB65785FC5D02DBB4646C9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -642,7 +642,7 @@
 		};
 		94FF5A8E27BC097D00FEB338 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3334620CA785CF76324792DA /* Pods-photoEditorChallenge.debug.xcconfig */;
+			baseConfigurationReference = 636468335A1199C7875A70E0 /* Pods-photoEditorChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -671,7 +671,7 @@
 		};
 		94FF5A8F27BC097D00FEB338 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51E64AD0DD03F954626D192D /* Pods-photoEditorChallenge.release.xcconfig */;
+			baseConfigurationReference = DFB66147B1ABE7834EB57345 /* Pods-photoEditorChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -700,7 +700,7 @@
 		};
 		94FF5A9127BC097D00FEB338 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FD9D7440BD0AA6AEF1C3302 /* Pods-photoEditorChallengeTests.debug.xcconfig */;
+			baseConfigurationReference = DCAFFDA249528210FF232A5A /* Pods-photoEditorChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -726,7 +726,7 @@
 		};
 		94FF5A9227BC097D00FEB338 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC6B5AAE48DE6E75B36283A3 /* Pods-photoEditorChallengeTests.release.xcconfig */;
+			baseConfigurationReference = 38E6BF0568A2DC3D645A3730 /* Pods-photoEditorChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -752,7 +752,7 @@
 		};
 		94FF5A9427BC097D00FEB338 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16EB3FC33EDAC610D1026BF7 /* Pods-photoEditorChallenge-photoEditorChallengeUITests.debug.xcconfig */;
+			baseConfigurationReference = 52CD90D188EBB9312C69BD0F /* Pods-photoEditorChallenge-photoEditorChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -776,7 +776,7 @@
 		};
 		94FF5A9527BC097D00FEB338 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84C91E917BBEDECDCD718C0C /* Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig */;
+			baseConfigurationReference = A789496B848FA1B48DE3FD02 /* Pods-photoEditorChallenge-photoEditorChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -840,7 +840,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		94FBA83C27BD68F800A0DBDD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		94FBA83C27BD68F800A0DBDD /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -853,7 +853,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		94FBA83D27BD68F800A0DBDD /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 94FBA83C27BD68F800A0DBDD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 94FBA83C27BD68F800A0DBDD /* XCRemoteSwiftPackageReference "Alamofire.git" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
