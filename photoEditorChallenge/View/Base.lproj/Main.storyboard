@@ -51,7 +51,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="7lx-5j-8xP"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="toSelectedPhotoView" id="xGd-PN-sXx"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toSelectedPhotoView" id="xGd-PN-sXx"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ous-Uq-RsL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -63,18 +63,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SelectedPhotoViewController" customModule="photoEditorChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="austin-smart-70350" translatesAutoresizingMaskIntoConstraints="NO" id="wQO-pd-TPI" customClass="JLStickerImageView" customModule="JLStickerTextView">
-                                <rect key="frame" x="82" y="296" width="250" height="250"/>
+                                <rect key="frame" x="82" y="323" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="2ZM-6N-hn9"/>
                                     <constraint firstAttribute="width" constant="250" id="qoA-Uo-LDB"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0X-SS-KPk">
-                                <rect key="frame" x="153" y="687" width="108" height="28"/>
+                                <rect key="frame" x="153" y="714" width="108" height="28"/>
                                 <color key="backgroundColor" red="0.61440727250000005" green="0.49696927219999998" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -93,7 +93,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="Q1d-79-Lav">
-                                <rect key="frame" x="55.5" y="636" width="303.5" height="31"/>
+                                <rect key="frame" x="55.5" y="663" width="303.5" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="gxo-g0-1mj">
                                         <rect key="frame" x="0.0" y="0.0" width="70.5" height="31"/>
