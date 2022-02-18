@@ -108,10 +108,10 @@ class SelectedPhotoViewController: UIViewController {
     }
     
     func postImage(){
-        var sURL : String
+      
         var bodyKeyValue = [RequestBodyFormDataKeyValue]()
         DispatchQueue.main.async { [self] in
-            var activityView = UIActivityIndicatorView(style: .whiteLarge)
+            let activityView = UIActivityIndicatorView(style: .whiteLarge)
                activityView.center = self.view.center
                self.view.addSubview(activityView)
                activityView.startAnimating()
@@ -120,7 +120,7 @@ class SelectedPhotoViewController: UIViewController {
             bodyKeyValue.append(RequestBodyFormDataKeyValue(sKey: K.uploadParameterKey1, sVal: K.uploadParameterValue1))
             bodyKeyValue.append(RequestBodyFormDataKeyValue(sKey: K.uploadParameterKey2, sVal: originalUrl!))
             if let urlString = self.url {
-            let serializer = DataResponseSerializer(emptyResponseCodes: Set([200]))
+           
             var sampleRequest = URLRequest(url: URL(string: urlString)!)
             sampleRequest.httpMethod = HTTPMethod.post.rawValue
             print("event=postImage message=Uploading the image")
