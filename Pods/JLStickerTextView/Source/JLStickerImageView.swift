@@ -92,8 +92,9 @@ extension JLStickerImageView {
     public func renderContentOnView() -> UIImage? {
         
         self.cleanup()
-        
-        UIGraphicsBeginImageContextWithOptions(self.bounds.size, true, 0)
+        let scale = UIScreen.main.scale
+
+        UIGraphicsBeginImageContextWithOptions(self.bounds.size, false, scale)
         
         self.layer.render(in: UIGraphicsGetCurrentContext()!)
         let img = UIGraphicsGetImageFromCurrentImageContext()
@@ -115,6 +116,7 @@ extension JLStickerImageView {
         if imageSize.width > imageSize.height {
             self.bounds.size.width = self.superview!.bounds.size.width
             self.bounds.size.height = self.superview!.bounds.size.width / aspectRatio
+           
         }else {
             self.bounds.size.height = self.superview!.bounds.size.height
             self.bounds.size.width = self.superview!.bounds.size.height * aspectRatio

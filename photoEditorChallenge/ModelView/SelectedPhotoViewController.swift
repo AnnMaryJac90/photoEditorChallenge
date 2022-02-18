@@ -44,6 +44,7 @@ class SelectedPhotoViewController: UIViewController {
         
         // Reflect the change back in the interface
         selectedPhotoView.image = UIImage(cgImage: renderedImage!)
+        
         print("event=applyFilter message=Filter has been successfully applied to the image")
     }
     
@@ -55,6 +56,7 @@ class SelectedPhotoViewController: UIViewController {
     
     // Saving the edited photo
     @IBAction func saveButonTapped(_ sender: UIButton) {
+        selectedPhotoView.image = selectedPhotoView.renderContentOnView()
         getUrlToPost()
         print("event=saveButonTapped message=Applied filters have been saved")
     }
@@ -64,6 +66,11 @@ class SelectedPhotoViewController: UIViewController {
         selectedPhotoView.addLabel()
         print("event=addTextButtonTapped message=Text box have been added")
     }
+    
+   
+    
+ //MARK: - Getting the url to upload the image and uploading the image using ALAMOFIRE
+    
     
     struct RequestBodyFormDataKeyValue {
         var sKey : String
